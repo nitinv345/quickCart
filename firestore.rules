@@ -107,7 +107,7 @@ service cloud.firestore {
     }
 
     match /products/{productId} {
-      allow read: if isAuthenticated();
+      allow read: if true;
       allow create: if isAdmin() && isValidProduct(request.resource.data);
       allow update: if isAdmin() && isValidProduct(request.resource.data);
       allow delete: if isAdmin();

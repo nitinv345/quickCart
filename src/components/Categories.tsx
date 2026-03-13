@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
 const categories = [
-  { name: "Fruits", img: "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?auto=format&fit=crop&w=300&q=80", color: "bg-red-100" },
-  { name: "Vegetables", img: "https://images.unsplash.com/photo-1566385101042-1a000c1267c4?auto=format&fit=crop&w=300&q=80", color: "bg-green-100" },
-  { name: "Dairy", img: "https://images.unsplash.com/photo-1550583724-125581f77833?auto=format&fit=crop&w=300&q=80", color: "bg-blue-100" },
-  { name: "Snacks", img: "https://images.unsplash.com/photo-1599490659213-e2b9527bd087?auto=format&fit=crop&w=300&q=80", color: "bg-yellow-100" },
-  { name: "Beverages", img: "https://images.unsplash.com/photo-1527960669566-f882ba85a4c6?auto=format&fit=crop&w=300&q=80", color: "bg-purple-100" },
-  { name: "Cleaning", img: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=300&q=80", color: "bg-orange-100" }
+  { name: "Fruits", img: "https://images.unsplash.com/photo-1610832958506-aa56368176cf", color: "bg-red-100" },
+  { name: "Vegetables", img: "https://images.unsplash.com/photo-1540420773420-3366772f4999", color: "bg-green-100" },
+  { name: "Dairy", img: "https://images.unsplash.com/photo-1580910051074-3eb694886505", color: "bg-blue-100" },
+  { name: "Snacks", img: "https://images.unsplash.com/photo-1599490659213-e2b9527bd087", color: "bg-yellow-100" },
+  { name: "Beverages", img: "https://images.unsplash.com/photo-1596803244618-8b06c2b59d7c", color: "bg-purple-100" },
+  { name: "Cleaning", img: "https://images.unsplash.com/photo-1581578731548-c64695cc6952", color: "bg-orange-100" }
 ];
 
 export default function Categories() {
