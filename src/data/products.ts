@@ -1,80 +1,52 @@
-export interface Product {
-  id: number;
-  name: string;
-  category: string;
-  price: number;
-  img: string;
-}
+export const categories = [
+  {
+    title: "Dairy, Bread & Eggs",
+    slug: "dairy",
+    items: [
+      {
+        id: 1,
+        name: "Amul Taaza Milk",
+        size: "500 ml",
+        price: 29,
+        time: "17 MINS",
+        img: "https://m.media-amazon.com/images/I/71mQ9c3Y0CL._SL1500_.jpg"
+      },
+      {
+        id: 2,
+        name: "Gokul Full Cream Milk",
+        size: "500 ml",
+        price: 38,
+        time: "17 MINS",
+        img: "https://m.media-amazon.com/images/I/61d5p9z2ZCL._SL1500_.jpg"
+      }
+    ]
+  },
 
-export const products: Product[] = [
   {
-    id: 1,
-    name: "Tomato",
-    category: "Vegetables",
-    price: 40,
-    img: "https://images.unsplash.com/photo-1607305387299-a3d9611cd469"
-  },
-  {
-    id: 2,
-    name: "Potato",
-    category: "Vegetables",
-    price: 30,
-    img: "https://images.unsplash.com/photo-1518977956812-cd3dbadaaf31"
-  },
-  {
-    id: 3,
-    name: "Carrot",
-    category: "Vegetables",
-    price: 50,
-    img: "https://images.unsplash.com/photo-1447175008436-170170753c84"
-  },
-  {
-    id: 4,
-    name: "Apple",
-    category: "Fruits",
-    price: 120,
-    img: "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6"
-  },
-  {
-    id: 5,
-    name: "Orange",
-    category: "Fruits",
-    price: 90,
-    img: "https://images.unsplash.com/photo-1547514701-42782101795e"
-  },
-  {
-    id: 6,
-    name: "Milk",
-    category: "Dairy",
-    price: 60,
-    img: "https://images.unsplash.com/photo-1550583724-125581fe2f8a"
-  },
-  {
-    id: 7,
-    name: "Cheese",
-    category: "Dairy",
-    price: 250,
-    img: "https://images.unsplash.com/photo-1486297678162-ad2a19b0584b"
-  },
-  {
-    id: 8,
-    name: "Potato Chips",
-    category: "Snacks",
-    price: 20,
-    img: "https://images.unsplash.com/photo-1566478989037-eec170784d0b"
-  },
-  {
-    id: 9,
-    name: "Cola",
-    category: "Beverages",
-    price: 40,
-    img: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97"
-  },
-  {
-    id: 10,
-    name: "Dish Soap",
-    category: "Cleaning",
-    price: 80,
-    img: "https://images.unsplash.com/photo-1584622781564-1d9876a125b1"
+    title: "Snacks & Munchies",
+    slug: "snacks",
+    items: [
+      {
+        id: 10,
+        name: "Cheetos Flamin Hot",
+        size: "28 g",
+        price: 132,
+        time: "17 MINS",
+        img: "https://m.media-amazon.com/images/I/81rE3aYy7HL._SL1500_.jpg"
+      },
+      {
+        id: 11,
+        name: "Protein Chef Peanuts",
+        size: "50 g",
+        price: 69,
+        time: "17 MINS",
+        img: "https://m.media-amazon.com/images/I/61O0s3x+uSL._SL1500_.jpg"
+      }
+    ]
   }
 ];
+
+// Flat list for searches and compatibility
+export const products = categories.flatMap(cat => 
+  cat.items.map(item => ({ ...item, category: cat.title }))
+);
