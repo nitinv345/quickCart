@@ -12,11 +12,9 @@ export default function ProductCard({ product }: { product: any }) {
         alt={product.name}
       />
 
-      <span className="text-[10px] text-gray-500 font-bold block mt-2">
-        ⏱ {product.time}
-      </span>
+      {/* Time display removed as per user request */}
 
-      <h3 className="text-sm font-semibold mt-1 line-clamp-2 h-10 leading-tight">
+      <h3 className="text-sm font-semibold mt-2 line-clamp-2 h-10 leading-tight">
         {product.name}
       </h3>
 
