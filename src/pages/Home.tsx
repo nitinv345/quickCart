@@ -22,9 +22,6 @@ export default function Home() {
       </div>
 
       <div className="max-w-7xl mx-auto">
-        {/* ICON CATEGORIES */}
-        <Categories />
-
         {/* PROMO BANNERS */}
         <Banners />
 
