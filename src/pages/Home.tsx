@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "../components/Navbar";
 import Categories from "../components/Categories";
 import ProductCard from "../components/ProductCard";
 import { db } from "../firebase";
@@ -41,10 +40,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-      {/* FOOTER */}
-      <footer className="bg-gray-900 text-white text-center py-6 mt-10">
-        <p>© 2026 QuickCart Grocery Delivery</p>
-      </footer>
     </div>
   );
 }
