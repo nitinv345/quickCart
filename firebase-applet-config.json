@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "apiKey": "AIzaSyA6w2ySY92sRNgIcbzJR6h9P7KMQLNA0IY",
   "authDomain": "quickcart-app-366e0.firebaseapp.com",
@@ -6,4 +7,16 @@
   "messagingSenderId": "745208251679",
   "appId": "1:745208251679:web:d551f5aa12874b6cb19c2a",
   "measurementId": "G-MPWZKR8C2Z"
-}
+}
+=======
+{
+  "projectId": "gen-lang-client-0093538944",
+  "appId": "1:692340558347:web:f3e70ce52586768565150e",
+  "apiKey": "AIzaSyCHxX4V6HDqMWapoF_RjO8Vco9_9tQjNB8",
+  "authDomain": "gen-lang-client-0093538944.firebaseapp.com",
+  "firestoreDatabaseId": "ai-studio-0a2cc7b9-f09c-4fa5-b5ba-3ef576422674",
+  "storageBucket": "gen-lang-client-0093538944.firebasestorage.app",
+  "messagingSenderId": "692340558347",
+  "measurementId": ""
+}
+>>>>>>> 6aaff744392753c0e1a1b6cbd0724098f9074bdd

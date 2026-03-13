@@ -1,21 +1,26 @@
 import React, { useEffect, useState } from "react";
 import Categories from "../components/Categories";
 import ProductCard from "../components/ProductCard";
-import { db } from "../firebase";
+import { db, auth } from "../firebase";
 import { collection, getDocs } from "firebase/firestore";
+import { handleFirestoreError, OperationType } from "../utils/firebaseUtils";
 
 export default function Home() {
   const [products, setProducts] = useState<any[]>([]);
 
   useEffect(() => {
     async function loadProducts() {
-      const data = await getDocs(collection(db, "products"));
-      setProducts(
-        data.docs.map((doc) => ({
-          id: doc.id,
-          ...doc.data(),
-        }))
-      );
+      try {
+        const data = await getDocs(collection(db, "products"));
+        setProducts(
+          data.docs.map((doc) => ({
+            id: doc.id,
+            ...doc.data(),
+          }))
+        );
+      } catch (error) {
+        handleFirestoreError(error, OperationType.LIST, "products", auth);
+      }
     }
     loadProducts();
   }, []);
