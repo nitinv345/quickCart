@@ -1,0 +1,5 @@
+{
+  "name": "QuickCart",
+  "description": "Instant grocery delivery platform",
+  "requestFramePermissions": ["geolocation"]
+}
