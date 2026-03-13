@@ -23,7 +23,6 @@ export default function Home() {
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      <Navbar />
       {/* HERO SECTION */}
       <section className="bg-yellow-100 py-16 text-center px-6">
         <h1 className="text-4xl font-bold mb-4">Groceries Delivered in Minutes</h1>
