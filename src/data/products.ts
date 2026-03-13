@@ -8,20 +8,17 @@ export const categories = [
         name: "Amul Taaza Milk",
         size: "500 ml",
         price: 29,
-        time: "17 MINS",
-        img: "https://m.media-amazon.com/images/I/71mQ9c3Y0CL._SL1500_.jpg"
+        img: "https://images.unsplash.com/photo-1550583724-125581fe2f8a?auto=format&fit=crop&w=400&q=80"
       },
       {
         id: 2,
         name: "Gokul Full Cream Milk",
         size: "500 ml",
         price: 38,
-        time: "17 MINS",
-        img: "https://m.media-amazon.com/images/I/61d5p9z2ZCL._SL1500_.jpg"
+        img: "https://images.unsplash.com/photo-1563636619-e910ef2a844b?auto=format&fit=crop&w=400&q=80"
       }
     ]
   },
-
   {
     title: "Snacks & Munchies",
     slug: "snacks",
@@ -31,22 +28,19 @@ export const categories = [
         name: "Cheetos Flamin Hot",
         size: "28 g",
         price: 132,
-        time: "17 MINS",
-        img: "https://m.media-amazon.com/images/I/81rE3aYy7HL._SL1500_.jpg"
+        img: "https://images.unsplash.com/photo-1599490659213-e2b9527bd087?auto=format&fit=crop&w=400&q=80"
       },
       {
         id: 11,
         name: "Protein Chef Peanuts",
         size: "50 g",
         price: 69,
-        time: "17 MINS",
-        img: "https://m.media-amazon.com/images/I/61O0s3x+uSL._SL1500_.jpg"
+        img: "https://images.unsplash.com/photo-1512411232841-f6334f59fc92?auto=format&fit=crop&w=400&q=80"
       }
     ]
   }
 ];
 
-// Flat list for searches and compatibility
 export const products = categories.flatMap(cat => 
   cat.items.map(item => ({ ...item, category: cat.title }))
 );
